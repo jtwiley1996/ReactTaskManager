@@ -1,0 +1,48 @@
+* {
+    background-color: #262626;
+}
+
+/* App.css */
+
+/* Center the header */
+header {
+    text-align: center;
+  }
+  
+  /* Style the task container */
+  .taskcontainer {
+    border: 1px solid white; /* Add a white border between Task Form and Task List */
+  }
+  
+  /* Add padding and margin to Task List and Task Form */
+  .task-container-item {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  /* Style the input fields in Task Form */
+  #taskName,
+  #taskDescription {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+  }
+  
+  /* Style the Add Task button */
+  button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

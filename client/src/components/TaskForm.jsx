@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../App.css';
 
 const TaskForm = ({ onSubmit }) => {
   const [taskName, setTaskName] = useState('');
@@ -28,6 +29,7 @@ const TaskForm = ({ onSubmit }) => {
         <div>
           <label htmlFor="taskName">Task Name:</label>
           <input
+          className='text-white'
             type="text"
             id="taskName"
             value={taskName}
@@ -37,12 +39,13 @@ const TaskForm = ({ onSubmit }) => {
         <div>
           <label htmlFor="taskDescription">Task Description:</label>
           <textarea
+          className='text-white'
             id="taskDescription"
             value={taskDescription}
             onChange={(e) => setTaskDescription(e.target.value)}
           ></textarea>
         </div>
-        <button type="submit">Add Task</button>
+        <button className='text-white' type="submit">Add Task</button>
       </form>
     </div>
   );

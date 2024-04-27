@@ -1,4 +1,6 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../App.css';
 
 const TaskList = ({ tasks, onDelete }) => {
   return (
@@ -13,7 +15,7 @@ const TaskList = ({ tasks, onDelete }) => {
               <div>
                 <h3>{task.name}</h3>
                 <p>{task.description}</p>
-                <button onClick={() => onDelete(task.id)}>Delete</button>
+                <button className='text-white'onClick={() => onDelete(task.id)}>Delete</button>
               </div>
             </li>
           ))}

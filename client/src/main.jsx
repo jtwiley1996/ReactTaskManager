@@ -1,12 +1,8 @@
 import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-const Main = () => {
-  return (
-    <main>
-      <h1>Main Section</h1>
-      {/* Your main content goes here */}
-    </main>
-  );
-};
 
-export default Main;
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <App />
+)
