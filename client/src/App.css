@@ -32,17 +32,18 @@ header {
     color: white;
   }
   
-  /* Style the Add Task button */
-  button[type="submit"] {
+/* Style the Add Task button with indigo gradient */
+button[type="submit"] {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-image: linear-gradient(to right, #6610f2, #6f42c1); /* Indigo gradient */
     color: white;
     cursor: pointer;
   }
   
   button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-image: linear-gradient(to right, #5a0bca, #580bc7); /* Darker indigo gradient on hover */
   }
+  
   
